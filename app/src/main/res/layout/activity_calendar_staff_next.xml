@@ -1,0 +1,625 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.win7.fyp.calendar_staff_next"
+    android:id="@+id/main_view"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="510dp"
+        android:nestedScrollingEnabled="false">
+
+        <EditText android:id="@+id/calSession1" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFBE80FF"
+            android:textColor="#FFBE80FF" />
+
+        <EditText android:id="@+id/calID1" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" android:maxLines="1"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFBE80FF"
+            android:textColor="#FFBE80FF" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:baselineAligned="true" android:background="#FFBE80FF">
+            <TextView
+                android:id="@+id/TextView01" android:text="Activity"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="center"
+                android:autoText="false" />
+            <TextView
+                android:id="@+id/TextView02" android:text="Start"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_span="2"
+                android:padding="20dip" android:gravity="center"/>
+
+
+
+
+            <TextView
+                android:id="@+id/TextView03" android:text="End"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:layout_span="2"
+                android:padding="20dip" android:gravity="center"/>
+
+
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/TextView015" android:text="Duration"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView1"  android:text="Kuliah"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+
+            <EditText
+                android:id="@+id/kuliahStart1"
+
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"
+                android:enabled="true"/>
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/kuliahEnd1"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF"  />
+
+
+
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/kuliahTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView2"  android:text="Entrance Survey"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/entranceStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/entranceEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/entranceTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView3"  android:text="Cuti Pertengahan Tahun"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/cutiPertStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/cutiPertEnd1"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/cutiPertTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView04"  android:text="Kuliah 2"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/kuliah2Start1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/kuliah2End1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/kuliah2Tempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView05"  android:text="Sufo"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/sufoStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/sufoEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/sufoTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView06"  android:text="Exit Survey"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/exitStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/exitEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/exitTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView07"  android:text="Study Week"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/studyweekStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/studyweekEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/studyweekTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView08"  android:text="Final Exam"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/examStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/examEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/examTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView09"  android:text="Result"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/resultDate1"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="#000000"
+                android:layout_gravity="left|center_vertical" />
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="left|center_vertical"
+                android:background="#FFFFFF" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView011"  android:text="Peperiksaan Khas"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/examKhasStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/examKhasEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/examKhasTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/TextView12"  android:text="Semester Break"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"
+                android:layout_gravity="left" />
+            <EditText
+                android:id="@+id/cutisemStart1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/cutisemEnd1"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:padding="20dip" android:gravity="center"/>
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF" />
+
+            <!--<EditText-->
+            <!--android:id="@+id/cutiSemTempoh"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000000"-->
+            <!--android:padding="20dip" android:gravity="center"/>-->
+        </TableRow>
+
+
+
+        <Button android:id="@+id/buttonUpdate" style="?android:textAppearanceSmall"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Update"
+            android:textStyle="bold"
+            android:textColor="#6c3279"
+            android:background="#FFBE80FF"
+            android:layout_gravity="center"
+            android:layout_span="12" />
+
+        <Button android:id="@+id/buttonDelete" style="?android:textAppearanceSmall"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Delete"
+            android:textStyle="bold"
+            android:textColor="#6c3279"
+            android:background="#FFBE80FF"
+            android:layout_gravity="center"
+            android:layout_span="12" />
+
+
+
+
+    </TableLayout>
+
+
+</ScrollView>

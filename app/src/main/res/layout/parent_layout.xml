@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/heading_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:textColor="#FFBE80FF"
+            android:text="Hello World "
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+
+
+</LinearLayout>

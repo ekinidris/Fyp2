@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Fyp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="country_names">
+
+        <item>Calculation</item>
+        <item>Ketidakhadiran</item>
+        <item>CGPA</item>
+        <item>GPA</item>
+
+    </string-array>
+
+
+    <string name="title_activity_login_advisor">loginAdvisor</string>
+    <string name="title_activity_main_advisor">mainAdvisor</string>
+    <string name="title_activity_login_staff">loginStaff</string>
+    <string name="title_activity_main_staff">mainStaff</string>
+
+
+
+    <string name="drawer_open">Open navigation</string>
+    <string name="drawer_close">Close navigation</string>
+    <string name="title_activity_calendar_advisor">calendar_advisor</string>
+    <string name="title_activity_calendar_staff">calendar_staff</string>
+    <string name="title_activity_advisor_advisor">advisor_advisor</string>
+    <string name="title_activity_calendar_next">calendar_next</string>
+    <string name="title_activity_calendar_advisor_next">calendar_advisor_next</string>
+    <string name="title_activity_calendar_advisor_try">calendar_advisor_try</string>
+    <string name="title_activity_activity_calendar_staff_update">activity_calendar_staff_update
+    </string>
+    <string name="title_activity_calendar_staff_update">calendar_staff_update</string>
+    <string name="title_activity_calendar_staff_next">calendar_staff_next</string>
+
+
+
+
+
+
+</resources>

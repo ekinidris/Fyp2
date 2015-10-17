@@ -1,0 +1,463 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/main_view"
+    android:background="#FFFFFF"
+    android:nestedScrollingEnabled="false"
+    android:measureWithLargestChild="false"
+    android:orientation="horizontal"
+    tools:context=".calendar_advisor_next"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <TextView android:id="@+id/tv1" android:layout_width="125dp"
+                android:text="Calendar Session:"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/calSession1" android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:enabled="true" />
+
+            <TextView android:id="@+id/calID1" android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:enabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv00" android:layout_width="151dp"
+                android:text="Activity"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+
+                android:textColor="#FFBE80FF"
+                android:layout_gravity="left" />
+
+            <TextView android:id="@+id/calSession01" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:enabled="true"
+                android:layout_gravity="right"
+                android:letterSpacing="1" />
+
+            <TextView android:id="@+id/calSession011" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:enabled="true"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv2" android:layout_width="151dp"
+                android:text="Kuliah:"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/kuliahStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:inputType="none"
+                android:letterSpacing="1" />
+
+
+            <TextView android:id="@+id/kuliahEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv4" android:layout_width="151dp"
+                android:text="Entrance:"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/entranceStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF"
+                android:layout_gravity="left" />
+
+            <TextView android:id="@+id/entranceEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv5" android:layout_width="151dp"
+                android:text="Midsem Break:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/cutiPertStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/cutiPertEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv8" android:layout_width="151dp"
+                android:text="Kuliah 2:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/kuliah2Start1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/kuliah2End1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv10" android:layout_width="151dp"
+                android:text="Sufo:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/sufoStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+
+            <TextView android:id="@+id/sufoEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv12" android:layout_width="151dp"
+                android:text="Exit:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/exitStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/exitEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv14" android:layout_width="151dp"
+                android:text="Study Week:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/studyweekStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/studyweekEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv16" android:layout_width="151dp"
+                android:text="Exam:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/examStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/examEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv18" android:layout_width="151dp"
+                android:text="Result:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/resultDate1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv19" android:layout_width="151dp"
+                android:text="Exam Khas:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/examKhasStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/examKhasEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tv21" android:layout_width="151dp"
+                android:text="Cuti Semester:"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/cutisemStart1" android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+
+            <TextView android:id="@+id/cutisemEnd1" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#FFBE80FF"
+                android:textColor="#FFBE80FF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:id="@+id/buttonUpdate"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:visibility="gone"
+                android:layout_weight="0.5"
+                android:id="@+id/buttonDelete" />
+
+        </LinearLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.win7.fyp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/uitmlogo"
+        android:label="ARCA"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register" >
+        </activity>
+        <activity android:name=".regulation" >
+        </activity>
+        <activity android:name=".calendar" >
+        </activity>
+        <activity android:name=".advisor" >
+        </activity>
+        <activity android:name=".regulation1" >
+        </activity>
+        <activity android:name=".regulation2" >
+        </activity>
+        <activity android:name=".loginAdvisor" >
+        </activity>
+        <activity android:name=".mainAdvisor" >
+        </activity>
+        <activity android:name=".loginStaff" >
+        </activity>
+        <activity android:name=".mainStaff" >
+        </activity>
+        <activity android:name=".regulation3" >
+        </activity>
+        <activity
+            android:name=".calendar_advisor"
+            android:allowBackup="true"
+            android:label="calendar_advisor" >
+        </activity>
+        <activity android:name=".calendar_staff" >
+        </activity>
+        <activity android:name=".advisor_advisor" >
+        </activity>
+        <activity
+            android:name=".calendar_next"
+            android:label="@string/title_activity_calendar_next" >
+        </activity>
+        <activity
+            android:name=".calendar_advisor_next"
+            android:parentActivityName=".calendar_advisor" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calendar_advisor" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".activity_calendar_staff_update"
+            android:label="@string/title_activity_activity_calendar_staff_update" >
+        </activity>
+        <activity
+            android:name=".calendar_staff_update"
+            android:label="@string/title_activity_calendar_staff_update" >
+        </activity>
+        <activity
+            android:name=".calendar_staff_next"
+            android:label="@string/title_activity_calendar_staff_next" >
+        </activity>
+    </application>
+
+</manifest>
